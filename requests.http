@@ -1,0 +1,24 @@
+### Kittens Index
+GET http://localhost:3000/kittens.json
+
+### Kittens create
+POST http://localhost:3000/kittens.json
+Content-Type: application/json
+
+{
+  "name": "Bobby McGee",
+  "breed": "Maine Coon",
+  "age": 3,
+  "weight": 20
+}
+
+### Kittens Show
+GET http://localhost:3000/kittens/1
+
+### Kittens update
+PATCH http://localhost:3000/kittens/1
+Content-Type: application/json
+
+{
+  "image": "test"
+}
